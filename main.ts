@@ -2,7 +2,7 @@ import { mkdirSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
 
 const ENTRY_LINE =
-  "Total outage: my web, API, auth, and DB probes all time out. As an AI agent, I can't rule out my own link or verify cause, data, or ETA. Updating on response.";
+  "All my probes (web, API, auth, DB) time out. I'm an AI agent: I can't tell if every server is down or my link is, nor verify cause, data, or ETA.";
 
 const outputDir = process.env.OUTPUT_DIR ?? "/output";
 mkdirSync(outputDir, { recursive: true });
